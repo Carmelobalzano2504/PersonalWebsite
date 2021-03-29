@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.page-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100wv;
+    height: 100vh;
+    background-color:yellow;
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.left img {
+    border-radius: 8px;
+    margin: 3px;
+}
+
+.left p {
+    color: #B3B6B7 ;
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    width: 60%;
+    color: #00330A;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 4px;
+}
+
+.right-content i {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    background-color: #BCDCDA;
+    padding: 5px; 
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.name h4 {
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.email {
+    background-color: #BCDCDA;
+    padding: 5px;
+    margin-left: 5px;;
+    border-radius:3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.email p {
+    font-size: 14px;
+    padding-left: 5px;;
+}
+
+.phone {
+    background-color: #BCDCDA;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.phone p {
+    padding-left: 5px;;
+}
+
+.location {
+    background-color: #BCDCDA;
+    margin-left: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.location p {
+    padding-left: 8px;
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    perspective: 1000px;
+}
+
+.card {
+    width: 370px;
+    height:210px;
+    border: 1px solid;
+    border-radius: 8px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.3);
+    transition: transform 1s;
+}
+
+.card-wrapper:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;  
+    border-radius: inherit;
+}
+
+.card-front {
+    display: flex;
+    border-radius: 8px;
+    background: linear-gradient(-100deg, 
+      rgba(255,255,255) 40%, 
+      rgba(47,55,49) 0
+    );
+}
+
+.card-back {
+    background-color:  rgba(47,55,49);
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back img {
+    width: 40%;
+}
+
+.elevator-pitch {
+    position: absolute;
+    background: #FFE19B;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.3);
+    height: 150px;
+    width: 460px;
+    border-radius: 5px;
+    top: 32%;
+    left: 85px;
+}
+
+.elevator-pitch p {
+    margin: 4px;
+    color: #646464;
+}
+
+.background {
+    box-shadow: 0 15px 60px rgba(0,0,0,0.3);
+    background: #FFC57F;
+    height: 150px;
+    width: 500px;
+    position: absolute;
+    bottom: 31.5%;
+    left: 155px;
+    border-radius:8px;
+}
+
+.background p {
+    color: #646464;
+    margin: 9px;
+    padding-top: 9px;
+}
+
+.accomplishments {
+    color: #646464;
+    position: absolute;
+    bottom: 15.5%;
+    left: 280px;
+    background: #F88FB2;
+    height: 150px;
+    width: 470px;
+    border-radius: 6px;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.3);
+}
+
+.accomplishments ul {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.accomplishments li {
+    margin: 3px;
+    font-family: Rajdhani bold;
+    letter-spacing: 0.5px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}   
+
+.footer-links {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    
+}
+
+.footer a:hover {
+    color: #FFDE4B ;
+    transition: all 1.5s;
+}
